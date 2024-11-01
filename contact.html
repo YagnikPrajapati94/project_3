@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FLYNEXT</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="shortcut icon" href="assets/img/plane-solid.svg" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/play.css">
+        <link rel="stylesheet" href="assets/css/cardhover.css">
+        <link rel="stylesheet" href="assets/css/media.css">
+        <link rel="stylesheet" href="assets/css/swiper.css">
+    
+        <!-- swiper link  -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+    
+        <!-- play button  -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    
+    
+        <!-- aos animation -->
+        <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    
+        <!-- bootstrap links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+        <!-- fontawesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <div id="preloader"></div>
+<body>
+    <header class="sticky-top">
+        <div class="container-fluid bg_header  px-xl-5 px-lg-0 ">
+            <div class="px-lg-5 px-md-0 d-block  ">
+                <nav class="navbar  navbar-expand-lg navbar-light">
+                    <div class="container-fluid  py-1">
+                      
+                        <a class="navbar-brand px-0" href="#">
+                          <img src="assets/img/logo.png" class="img-fluid" alt="">
+                        </a>
+                        <button class="navbar-toggler border-0 float-end mt-2 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                          <span class=""><i class="fa-solid h3 text-white mt-2 fa-bars"></i></span>
+                        </button>
+                   
+                      <div class="collapse navbar-collapse  px-0 justify-content-end  w-100" id="navbarSupportedContent">
+                        <ul class="navbar-nav gap-2">
+                          <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li> -->
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link nav_under px-0  fw-bold fs-6 text-white" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 text-white"  href="about.html">About Us</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4 ">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="services.html">Services</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 text-white"  href="blog.html">Blog</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 text-white"  href="faq.html">Faq</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 " style="color: #dcbb87;" href="contact.html">Contact Us</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4 position-relative">
+                            <a class="nav-link px-0  fw-bold fs-6 text-white " href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <!-- <form action="" class="position-absolute form">
+                             <div class="input-group border  ">
+                              <input type="text">
+                              <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                             </div>
+                            </form> -->
+                          </li>
+                          <li class="nav-item nav_btn rounded-1 py-1 pe-4 pe-lg-0">
+                            <a class="nav-link  px-4 px-lg-3 py-2  rounded-1 fw-bold text-dark" href="#">
+                              <i class="fa-solid fa-plane"></i>
+                              <span class="d-lg-none d-xxl-inline-block">Book Now</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start bg-black" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header">
+              <a class="navbar-brand px-0" href="#">
+                <img src="assets/img/logo.png" class="img-fluid" alt="">
+              </a>
+              <button type="button" class="btn text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid h2 mt-3 text-white fa-xmark"></i></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li> -->
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link nav_under px-0  fw-bold fs-6 text-white"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white"  href="about.html">About Us</a>
+                </li>
+                <li class="nav-item py-1 pe-4 ">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="services.html">Services</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white"  href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white"  href="faq.html">Faq</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 " style="color: #DCBB87;" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0  fw-bold fs-6 text-white " href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li class="nav-item nav_btn rounded-pill  py-1 pe-4 pe-lg-0">
+                  <a class="nav-link  px-4 px-lg-3 py-2 rounded-pill fw-bold text-dark" href="#">
+                    <i class="fa-solid fa-plane"></i>
+                    <span class="d-lg-none d-xxl-inline-block">Book Now</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+    </header>
+    <main>
+                <!-- section 1  -->
+                <section>
+                    <div class="container-fluid s4_bg py-5 ">
+                     <div class="container position-relative" style="z-index: 2;">
+                      <div class="row py-5 justify-content-center">
+                        <div class="col-lg-12 py-5 text-center ">
+                            <h1 class="text-white display-3 fw-bold">Contact</h1>
+                             <p class="nav text-white h5 justify-content-center fw-bold  align-items-center gap-3">
+                                <a href="index.html" class="nav-link px-0 py-0 text-white">Home</a><i class="fa-solid fa-greater-than"></i> <span style="color: #dcbb87;">Contact</span>
+                             </p>
+                        </div>
+                      </div>
+                     </div>
+                    </div>
+                  </section>
+
+                  <!-- section 2 -->
+                   <section>
+                    <div class="container-fluid py-5 ">
+                        <div class="container py-5 ">
+                            <div class="row py-5  justify-content-evenly">
+                                <div class="col-lg-5 px-0 py-4">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d912.7629795499881!2d90.42575867361067!3d23.78116547229959!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7499f257eab%3A0xe6b4b9eacea70f4a!2sManama%20M.S%20Toren!5e0!3m2!1sen!2sbd!4v1730270608163!5m2!1sen!2sbd" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="col-lg-5 py-4">
+                                    <h4 class="m-0 fw-bold mb-3" style="color: #DCBB87;">Luxury Charters</h4>
+                                    <h1 class="m-0 mb-3">How to Contact with Us?</h1>
+                                    <p class="m-0 lh-lg mb-3">The first small jet-powered civil aircraft was the Morane-Saulnier MS.760 Paris, developed privately in the early 1950s from the MS.755</p>
+                                    <ul class="navbar-nav">
+                                        <li class=" py-4" style="border-bottom: 1px dashed gray;"><a href="" class="nav-link px-0 py-0 d-flex align-items-center">
+                                            <div>
+                                                <i class="fa-solid fa-location-dot p-3 me-4 h3 rounded-circle" style="color: #DCBB87;background-color: #dcbc8748;"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="m-0 mb-2 fw-bold text-black">Our Location</h4>
+                                                <p class="m-0 text-black mb-2">963 heloe Ua-Torrento, CA 95448</p>
+                                                <p class="m-0 fw-bold" style="color: #DCBB87;">Find Us On google Map <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                                            </div>
+                                        </a></li>
+                                        <li class=" py-4" style="border-bottom: 1px dashed gray;"><a href="" class="nav-link px-0 py-0 d-flex align-items-center">
+                                            <div>
+                                                <i class="fa-solid fa-phone p-3 me-4 h3 rounded-circle" style="color: #DCBB87;background-color: #dcbc8748;"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="m-0 mb-2 fw-bold text-black">Our Phone</h4>
+                                                <p class="m-0 text-black mb-2">+1 814 929 4263</p>
+                                                <p class="m-0 text-black mb-2">+1 814 929 4264</p>
+                                            </div>
+                                        </a></li>
+                                        <li class=" py-4" style="border-bottom: 1px dashed gray;"><a href="" class="nav-link px-0 py-0 d-flex align-items-center">
+                                            <div>
+                                                <i class="fa-regular fa-envelope p-3 me-4 h3 rounded-circle" style="color: #DCBB87;background-color: #dcbc8748;"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="m-0 mb-2 fw-bold text-black">Our Email</h4>
+                                                <p class="m-0 text-black mb-2">Contact@flynext.com</p>
+                                                <p class="m-0 text-black mb-2">Contact01@flynext.com</p>
+                                            </div>
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </section>
+                   <section>
+                    <div class="container-fluid py-5"  style="background-color: #f5f3f1">
+                        <div class="container py-5 ">
+                            <div class="row  justify-content-between ">
+                                <div class="col-lg-4 py-4">
+                                    <h5 class="fw-bold mb-3" style="color: #DCBB87;">Talk to us</h5>
+                                    <h1 class="mb-3 ">Any Question? Fell Free to Contact</h1>
+                                    <p class="m-0 lh-lg mb-3">With a vast array of popular private planes to choose from, travelling by private jet charter is the most efficient</p>
+                                    <ul class="nav gap-3">
+                                        <li class="nav-item "><a href="" class="nav-link px-2 py-2    text-center rounded-circle py-2  social-2 "><i class="fa-brands fa-facebook px-1 "></i></a></li>
+                                        <li class="nav-item"><a href="" class="nav-link px-2 py-2    text-center rounded-circle py-2 social-2"><i class="fa-brands fa-twitter px-1"></i></a></li>
+                                        <li class="nav-item"><a href="" class="nav-link  px-2 py-2 text-center rounded-circle py-2 social-2"><i class="fa-brands fa-youtube px-1"></i></a></li>
+                                        <li class="nav-item"><a href="" class="nav-link  px-2 py-2   text-center rounded-circle py-2 social-2"><i class="fa-brands fa-instagram px-1"></i></a></li>
+                                      </ul>
+                                </div>
+                                <div class="col-lg-6 py-4">
+                                    <form action="" class="row gap-4 ">
+                                        <div class="col-md-12 d-flex gap-3">
+                                            <div class="input-group ">
+                                                <input type="text" class="form-control border-end-0 py-3" style="border: 1px solid #DCBB87 ;"  placeholder="Name" aria-describedby="basic-addon1">
+                                                <span class="input-group-text bg-white" id="basic-addon1" style="border: 1px solid #DCBB87 ;"><i class="fa-solid fa-user"></i></span>
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="email" class="form-control border-end-0 py-3" id="inputEmail4" style="border: 1px solid #DCBB87 ;" placeholder="Email">
+                                                <span class="input-group-text bg-white" id="basic-addon1" style="border: 1px solid #DCBB87 ;"><i class="fa-regular fa-envelope"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 gap-3 d-flex">
+                                            <div class="input-group ">
+                                                <input type="tel" class="form-control border-end-0 py-3" style="border: 1px solid #DCBB87 ;"  placeholder="Phone" aria-describedby="basic-addon1">
+                                                <span class="input-group-text bg-white" id="basic-addon1" style="border: 1px solid #DCBB87 ;"><i class="fa-solid fa-phone"></i></span>
+                                            </div>
+                                            <div class="input-group">
+                                               <select name="" id="" class="form-select  py-3"  style="border: 1px solid #DCBB87 ;">
+                                                <option value="">Subject</option>
+                                                <option value="">Subject one</option>
+                                                <option value="">Subject two</option>
+                                               </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea class="form-control" placeholder="Message" id="floatingTextarea2" style="height: 100px;border: 1px solid #DCBB87 ;"></textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <ul class="nav">
+                                                <li class="nav-item nav_btn btn-outline-dark border-0 rounded-1 py-1 pe-4 pe-lg-0">
+                                                    <a class="nav-link  px-4 px-lg-3 py-2  rounded-1 fw-bold text-dark" href="#">
+                                                      <i class="fa-solid fa-plane"></i>
+                                                      <span class="d-lg-none d-xxl-inline-block">Submit Now</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </section>
+    </main>
+    <footer>
+        <section>
+          <div class="container-fluid py-5 ft_bg ">
+            <div class="container pt-5 ">
+              <div class="row  justify-content-between">
+                <div class="col-lg-4  col-md-7 my-2 ">
+                  <img src="assets/img/logo.png" class="img-fluid mb-2" alt="">
+                  <p class="text-white lh-lg">Flynext was founded in 1991 by a group of safety-focused professionals who created The Wingman Standard for rigorously vetting air charter operators.</p>
+                </div>
+                <div class="col-lg-3 col-md-5 align-content-center my-2">
+                  <ul class="navbar-nav ">
+                    <li><h5 class="fw-bold pb-2" style="color: #DCBB87 ;">EUROPE</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Europe 45 Gloucester Road</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">London DT1M 3BF</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">+44 (0)20 3671 5709</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2  col-md-7   align-content-center my-2">
+                  <ul class="navbar-nav ">
+                    <li><h5 class="fw-bold pb-2" style="color: #DCBB87 ;">ASIA & PACIFIC</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">2473 Red Road Ste 98</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Singapore SG</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">+ 1 623 211 6319</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2  col-md-5   align-content-center my-2">
+                  <ul class="navbar-nav ">
+                    <li><h5 class="fw-bold pb-2" style="color: #DCBB87 ;">NORTH AMERICA</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">2473 Red Road Ste 98</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Singapore SG</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">+ 1 623 211 6319</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row py-5  justify-content-center " style="border-radius: 15px; border: 1px solid #DCBB87; background-color: #19232d;">
+                <div class="col-lg-3 my-3 col-md-6">
+                  <ul class="navbar-nav">
+                    <li><h5 class="text-white fw-bold mb-3  pb-2 ft_under">Get Started</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Private jet</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Register</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Current Jet Deals</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Flynext mobile app</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 my-3 col-md-6">
+                  <ul class="navbar-nav">
+                    <li><h5 class="text-white fw-bold mb-3  pb-2 ft_under">How it works</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">How it works</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Ways to fly</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Ways to buy</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Private charter</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Private Jet Cost</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 my-3 col-md-6">
+                  <ul class="navbar-nav">
+                    <li><h5 class="text-white fw-bold mb-3  pb-2 ft_under">About us</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">About us</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">News & press</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Blog</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">FAQs</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Careers</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 my-3 col-md-6">
+                  <ul class="navbar-nav">
+                    <li><h5 class="text-white fw-bold mb-3  pb-2 ft_under">About us</h5></li>
+                    <li><p class="text-white">Flynext was founded in 1991 by a group of safety-focused professionals erators.</p></li>
+                    <li>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text border-0 bg-white px-3" id="basic-addon1"><i class="fa-regular fa-envelope" style="color: #DCBB87; cursor: pointer;"></i></span>
+                        <input type="text" class="form-control border-0 px-0 py-3" placeholder="Enter-Email" aria-label="Username" aria-describedby="basic-addon1" style="cursor: text;">
+                      </div>
+                    </li>
+                    <li class="nav-item nav_btn rounded-1 py-1 pe-4 pe-lg-0">
+                      <a class="nav-link  px-4 px-lg-3 py-2  rounded-1 fw-bold text-dark" href="#">
+                        <i class="fa-solid fa-plane"></i>
+                        <span class="d-lg-none d-xxl-inline-block">Subscribe Us</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row pt-5">
+                <div class="col-lg-6 col-md-6">
+                  <ul class="nav gap-3">
+                    <li class="nav-item "><a href="" class="nav-link px-2 py-2    text-center rounded-circle py-2  social-2 "><i class="fa-brands fa-facebook px-1 "></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link px-2 py-2    text-center rounded-circle py-2 social-2"><i class="fa-brands fa-twitter px-1"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link  px-2 py-2 text-center rounded-circle py-2 social-2"><i class="fa-brands fa-youtube px-1"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link  px-2 py-2   text-center rounded-circle py-2 social-2"><i class="fa-brands fa-instagram px-1"></i></a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 text-lg-end my-3 align-content-center text-md-start">
+                  <p class="text-white  m-0">© 2022 Fly Next Airlines. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    
+    <script>
+        var loader = document.getElementById("preloader");
+        setTimeout(function() {
+            loader.style.display = "none";
+        }, 3000);
+        window.addEventListener("load", function() {
+        });
+
+    </script>
+</body>
+</html>

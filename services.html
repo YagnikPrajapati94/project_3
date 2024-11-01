@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLYNEXT</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/plane-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/play.css">
+    <link rel="stylesheet" href="assets/css/cardhover.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+
+    <!-- swiper link  -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+    <!-- play button  -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+
+
+    <!-- aos animation -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<div id="preloader"></div>
+<body>
+    <header class="sticky-top">
+        <div class="container-fluid bg_header  px-xl-5 px-lg-0 ">
+            <div class="px-lg-5 px-md-0 d-block  ">
+                <nav class="navbar  navbar-expand-lg navbar-light">
+                    <div class="container-fluid  py-1">
+                      
+                        <a class="navbar-brand px-0" href="#">
+                          <img src="assets/img/logo.png" class="img-fluid" alt="">
+                        </a>
+                        <button class="navbar-toggler border-0 float-end mt-2 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                          <span class=""><i class="fa-solid h3 text-white mt-2 fa-bars"></i></span>
+                        </button>
+                   
+                      <div class="collapse navbar-collapse  px-0 justify-content-end  w-100" id="navbarSupportedContent">
+                        <ul class="navbar-nav gap-2">
+                          <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li> -->
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link nav_under px-0  fw-bold fs-6 text-white" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 text-white " href="about.html">About Us</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4 ">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 " style="color: #dcbb87;" href="services.html">Services</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="blog.html">Blog</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="faq.html">Faq</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="contact.html">Contact Us</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4 position-relative">
+                            <a class="nav-link px-0  fw-bold fs-6 text-white " href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <!-- <form action="" class="position-absolute form">
+                             <div class="input-group border  ">
+                              <input type="text">
+                              <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                             </div>
+                            </form> -->
+                          </li>
+                          <li class="nav-item nav_btn rounded-1 py-1 pe-4 pe-lg-0">
+                            <a class="nav-link  px-4 px-lg-3 py-2  rounded-1 fw-bold text-dark" href="#">
+                              <i class="fa-solid fa-plane"></i>
+                              <span class="d-lg-none d-xxl-inline-block">Book Now</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start bg-black" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header">
+              <a class="navbar-brand px-0" href="#">
+                <img src="assets/img/logo.png" class="img-fluid" alt="">
+              </a>
+              <button type="button" class="btn text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid h2 mt-3 text-white fa-xmark"></i></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li> -->
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link nav_under px-0  fw-bold fs-6 text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="#">About Us</a>
+                </li>
+                <li class="nav-item py-1 pe-4 ">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="#">Pages</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="#">Blog</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="#">Faq</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0  fw-bold fs-6 text-white " href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li class="nav-item nav_btn rounded-pill  py-1 pe-4 pe-lg-0">
+                  <a class="nav-link  px-4 px-lg-3 py-2 rounded-pill fw-bold text-dark" href="#">
+                    <i class="fa-solid fa-plane"></i>
+                    <span class="d-lg-none d-xxl-inline-block">Book Now</span></a>
+                </li>
+              </ul>
+            </div>
+
+    </header>
+    <main>
+        <!-- section 1 -->
+        <section>
+            <div class="container-fluid s4_bg py-5 ">
+             <div class="container position-relative" style="z-index: 2;">
+              <div class="row py-5 justify-content-center">
+                <div class="col-lg-12 py-5 text-center ">
+                    <h1 class="text-white display-3 fw-bold">Services</h1>
+                     <p class="nav text-white h5 justify-content-center fw-bold  align-items-center gap-3">
+                        <a href="index.html" class="nav-link px-0 py-0 text-white">Home</a><i class="fa-solid fa-greater-than"></i> <span style="color: #dcbb87;">Services</span>
+                     </p>
+                </div>
+              </div>
+             </div>
+            </div>
+          </section>
+         <!-- section 1 end  -->
+          <!-- section 2 -->
+          <section>
+            <div class="container-fluid py-5">
+              <div class="container py-5 ">
+                <div class="row  ">
+                  <div class="col-lg-12 pb-5 mb-3 text-center" data-aos="zoom-in" data-aos-duration="4000">
+                    <p class="h5 pb-3" style="letter-spacing: 1px;font-weight: 600;">
+                      <span class="">Discover</span>
+                      <span class="" style="color: #DCBB87;">Flynext</span>
+                      <span class="">Benifits</span>
+                    </p>
+                    <h1 class="fw-bold">Discover Private Jet Benefits</h1>
+                  </div>
+                  <div class="col-lg-12" data-aos="zoom-out" data-aos-duration="4000">
+                    <div class="row  justify-content-around">
+                      <div class="card py-4 border-0 card_hover " style="width: 22rem;">
+                        <div class="card-body">
+                          <i class="fa-solid fa-globe display-3"></i>
+                          <h4 class="card-subtitle mt-4 mb-3 text-dark">Luxury & Comfort Travel</h4>
+                          <p class="card-text text-muted lh-lg" style="font-size: 17px;">As well as getting to fly to many different destinations as part of their job,
+                            airplane pilots get big discounts on money</p>
+                        </div>
+                      </div>
+    
+                      <!-- ------- -->
+                      <div class="card py-4 border-0 card_hover" style="width: 22rem;">
+                        <div class="card-body">
+                          <i class="fa-solid fa-circle-dollar-to-slot display-3"></i>
+                          <h4 class="card-subtitle mt-4 mb-3 text-dark">Smart Costing Flight</h4>
+                          <p class="card-text text-muted lh-lg" style="font-size: 17px;">Flying should be a pleasure and we’ll make your charter experience as luxurious and more comfortable as soon as possible.</p>
+                        </div>
+                      </div>
+  
+                      <!-- --------- -->
+                      <div class="card py-4 border-0 card_hover" style="width: 22rem;">
+                        <div class="card-body">
+                          <i class="fa-solid fa-user-tie display-3"></i>
+                          <h4 class="card-subtitle mt-4 mb-3 text-dark">Career progression</h4>
+                          <p class="card-text text-muted lh-lg" style="font-size: 17px;">The first small jet-powered civil aircraft was the Morane-Saulnier MS.760 Paris, developed privately since 1940s</p>
+                        </div>
+                      </div>
+  
+  
+                      <div class="card  py-4 border-0 card_hover" style="width: 22rem;">
+                        <div class="card-body">
+                          <i class="fa-solid fa-calendar-days display-3"></i>
+                          <h4 class="card-subtitle mt-4 mb-3 text-dark">Flexible Schedule</h4>
+                          <p class="card-text text-muted lh-lg" style="font-size: 17px;">Our technology consistently delivers the best pricing for charters – and the unique ability to buy individual seats all over the world.</p>
+                        </div>
+                      </div>
+    
+                      <!-- ------- -->
+                      <div class="card  py-4 border-0 card_hover" style="width: 22rem;">
+                        <div class="card-body">
+                          <i class="fa-solid fa-bullhorn display-3"></i>
+                          <h4 class="card-subtitle mt-4 mb-3 text-dark">Excellent advantages</h4>
+                          <p class="card-text text-muted lh-lg" style="font-size: 17px;">Search the world with ease and transparency.As the only tech-forward private aviation company, XO is able to bring you</p>
+                        </div>
+                      </div>
+  
+                      <!-- ---------- -->
+                      <div class="card  py-4 border-0 card_hover" style="width: 22rem;">
+                        <div class="card-body">
+                          <i class="fa-brands fa-phoenix-framework display-3"></i>
+                          <h4 class="card-subtitle mt-4 mb-3 text-dark">Coolest Environment</h4>
+                          <p class="card-text text-muted lh-lg" style="font-size: 17px;">Charter an entire jet, or offer the seats you don’t need through our app a need for full or even fractional jet ownership</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+           </section>
+           <!-- section 2 end  -->
+            <!-- section 3 -->
+            <section>
+                <div class="container-fluid s4_bg py-5 ">
+                 <div class="container position-relative" style="z-index: 2;">
+                  <div class="row py-5 justify-content-center">
+                    <div class="col-lg-3 col-md-6 py-3 c1  text-center" style="border-right: 1px dashed #dcbb87;">
+                      <span class="text-white h2 fw-bold">95</span>
+                      <p class="text-white h5 mt-1">Professional Pilots</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 py-3 c2 text-center " style="border-right: 1px dashed #dcbb87;">
+                      <span class="text-white h2 fw-bold">68</span>
+                      <p class="text-white h5 mt-1">Jet Airplanes</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 py-3 c3  text-center " style="border-right: 1px dashed #dcbb87;">
+                      <span class="text-white h2 fw-bold">290</span>
+                      <p class="text-white h5 mt-1">World Airports</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 py-3 c4  text-center " >
+                      <span class="text-white h2 fw-bold">195</span>
+                      <p class="text-white h5 mt-1">Directions</p>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+              </section>
+             <!-- section 3 end  -->
+              <!-- section 4 -->
+              <section>
+                <div class="container-fluid py-5 ">
+                  <div class="container py-5 s6_bg ">
+                    <div class="row py-5  position-relative" style="z-index: 2;">
+                      <div class="col-lg-12 text-center mb-3">
+                        <p class="h5 pb-3" style="letter-spacing: 1px;font-weight: 600;">
+                          <span class="" style="color: #DCBB87;">Flynext</span>
+                          <span class="text-white">Book</span>
+                        </p>
+                        <h1 class="fw-bold text-white">Book A Personal Flight</h1>
+                      </div>
+                      <div class="col-lg-12">
+                        <form action="">
+                          <div class="row px-xl-5 mx-xl-5 ">
+                            <div class="col-xl-3">
+                              <label for="" class="text-white py-3 ">From</label>
+                              <select class="form-select py-3  text-white " style="border: 1px solid #DCBB87;background-color: #dcbc8794;" aria-label="Default select example">
+                                <option selected class="text-dark">Dhaka</option>
+                                <option value="1" class="text-dark">London</option>
+                              </select> 
+                            </div>
+                            <div class="col-xl-3">
+                              <label for="" class="text-white py-3">To</label>
+                              <select class="form-select py-3 text-white " style="border: 1px solid #DCBB87;background-color: #dcbc8794;" aria-label="Default select example">
+                                <option selected class="text-dark">Londom</option>
+                                <option value="1" class="text-dark">Dhaka</option>
+                              </select> 
+                            </div>
+                            <div class="col-xl-3">
+                              <label for="" class="text-white py-3">Date</label>
+                              <input type="date" class="form-control py-3 text-white" value="2021-12-25"   style="border: 1px solid #DCBB87;background-color: #dcbc8794;">
+                            </div>
+                            <div class="col-xl-3">
+                              <label for="" class="text-white py-3">Passenger</label>
+                              <input type="number"  class="form-control py-3 text-white" value="1" min="1"  style="border: 1px solid #DCBB87;background-color: #dcbc8794;">
+                              
+                            </div>
+                            <div class="col-xl-12 mt-5">
+                              <ul class="nav  justify-content-center">
+                                <li class="nav-item nav_btn rounded-pill py-1 pe-4 pe-lg-0">
+                                  <a class="nav-link  px-4 px-lg-3 py-2  rounded-1 fw-bold text-dark" href="#">
+                                    <i class="fa-solid fa-plane"></i>
+                                    <span class="d-lg-none d-xxl-inline-block">Book Now</span></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section> 
+               <!-- section 4 end  -->
+                <!-- section 5 -->
+                <section>
+                    <div class="container-fluid  py-5">
+                      <div class="container py-5 ">
+                        <div class="row ">
+                          <div class="col-lg-12">
+                            <div class="row pe-3 justify-content-lg-between justify-content-md-start">
+                              <div class="col-lg-6">
+                                <p class="h5 " style="color: #DCBB87;">Luxury Charters</p>
+                                <h1 class="fw-bold ">Luxury Deals For You</h1>
+                              </div> 
+                              <div class="col-lg-2 n_p_button  justify-content-end col-xl-1  col-md-2 d-none d-lg-flex  mt-4 d-flex  position-relative">
+                                <div class="align-content-center  " ><i class="fa-solid  py-2 fa-less-than px-3 align-content-center swiper-next rounded-circle me-1"></i></div>
+                                <div class="align-content-center "><i class="fa-solid py-2 fa-greater-than px-3 align-content-center swiper-prev rounded-circle ms-1"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12 mt-5">
+                            <div class="swiper mySwiper">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="card" style="border-radius: 13px !important;">
+                                    <img src="assets/img/charter-1.png" class="img-fluid" alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px;">
+                                    <div class="card-body">
+                                      <a href="" class="nav-link px-0 py-0 ft_text h4 text-dark fw-bold">Private Jet Charter</a>
+                                      <p class="card-text text-secondary">Legacy 600.</p>
+                                      <ul class="nav justify-content-between pb-2" style="border-bottom: 1px dashed gray;">
+                                        <li class="">8-14 Seats</li>
+                                        <li class="">Price: $9,000/hr</li>
+                                      </ul>
+                                    </div>
+                                    <div class="card-body pb-3 py-0 ">
+                                      <a href="" class=" nav-link px-0 py-0 ft_text_plane " style="width: fit-content;">
+                                        <i class="fa-solid fa-plane ft_plane"></i>
+                                        <span class="ti">Book Now</span>
+                                       </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="card" style="border-radius: 13px !important;">
+                                  <img src="assets/img/charter-2.png" class="img-fluid" alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px;">
+                                  <div class="card-body">
+                                    <a href="" class="nav-link px-0 py-0 ft_text h4 text-dark fw-bold">Business Jet Charter</a>
+                                    <p class="card-text text-secondary">Beech BE300 Super King</p>
+                                    <ul class="nav justify-content-between pb-2" style="border-bottom: 1px dashed gray;">
+                                      <li class="">8-14 Seats</li>
+                                      <li class="">Price: $9,000/hr</li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-body pb-3 py-0 ">
+                                    <a href="" class=" nav-link px-0 py-0 ft_text_plane " style="width: fit-content;">
+                                      <i class="fa-solid fa-plane ft_plane"></i>
+                                      <span class="ti">Book Now</span>
+                                     </a>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="card" style="border-radius: 13px !important;">
+                                  <img src="assets/img/charter-3.png" class="img-fluid" alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px;">
+                                  <div class="card-body">
+                                    <a href="" class="nav-link px-0 py-0 ft_text h4 text-dark fw-bold">Private Helicopter</a>
+                                    <p class="card-text text-secondary">Charter a A500</p>
+                                    <ul class="nav justify-content-between pb-2" style="border-bottom: 1px dashed gray;">
+                                      <li class="">8-14 Seats</li>
+                                      <li class="">Price: $9,000/hr</li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-body pb-3 py-0 ">
+                                    <a href="" class=" nav-link px-0 py-0 ft_text_plane " style="width: fit-content;">
+                                      <i class="fa-solid fa-plane ft_plane"></i>
+                                      <span class="ti">Book Now</span>
+                                     </a>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="card" style="border-radius: 13px !important;">
+                                  <img src="assets/img/charter-4.png" class="img-fluid" alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px;">
+                                  <div class="card-body">
+                                    <a href="" class="nav-link px-0 py-0 ft_text h4 text-dark fw-bold">Air Ambulance</a>
+                                    <p class="card-text text-secondary">Beech BE300 Super King</p>
+                                    <ul class="nav justify-content-between pb-2" style="border-bottom: 1px dashed gray;">
+                                      <li class="">8-14 Seats</li>
+                                      <li class="">Price: $9,000/hr</li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-body pb-3 py-0 ">
+                                    <a href="" class=" nav-link px-0 py-0 ft_text_plane " style="width: fit-content;">
+                                      <i class="fa-solid fa-plane ft_plane"></i>
+                                      <span class="ti">Book Now</span>
+                                     </a>
+                                  </div>
+                                  </div>
+                                </div>
+        
+                                <!-- --------------------------- -->
+                                <div class="swiper-slide">
+                                  <div class="card" style="border-radius: 13px !important;">
+                                    <img src="assets/img/charter-1.png" class="img-fluid" alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px;">
+                                    <div class="card-body">
+                                      <a href="" class="nav-link px-0 py-0 ft_text h4 text-dark fw-bold">Private Jet Charter</a>
+                                      <p class="card-text text-secondary">Legacy 600.</p>
+                                      <ul class="nav justify-content-between pb-2" style="border-bottom: 1px dashed gray;">
+                                        <li class="">8-14 Seats</li>
+                                        <li class="">Price: $9,000/hr</li>
+                                      </ul>
+                                    </div>
+                                    <div class="card-body pb-3 py-0 ">
+                                      <a href="" class=" nav-link px-0 py-0 ft_text_plane " style="width: fit-content;">
+                                        <i class="fa-solid fa-plane ft_plane"></i>
+                                        <span class="ti">Book Now</span>
+                                       </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="card" style="border-radius: 13px !important;">
+                                  <img src="assets/img/charter-2.png" class="img-fluid" alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px;">
+                                  <div class="card-body">
+                                    <a href="" class="nav-link px-0 py-0 ft_text h4 text-dark fw-bold">Business Jet Charter</a>
+                                    <p class="card-text text-secondary">Beech BE300 Super King</p>
+                                    <ul class="nav justify-content-between pb-2" style="border-bottom: 1px dashed gray;">
+                                      <li class="">8-14 Seats</li>
+                                      <li class="">Price: $9,000/hr</li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-body pb-3 py-0 ">
+                                    <a href="" class=" nav-link px-0 py-0 ft_text_plane " style="width: fit-content;">
+                                      <i class="fa-solid fa-plane ft_plane"></i>
+                                      <span class="ti">Book Now</span>
+                                     </a>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="card" style="border-radius: 13px !important;">
+                                  <img src="assets/img/charter-3.png" class="img-fluid" alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px;">
+                                  <div class="card-body">
+                                    <a href="" class="nav-link px-0 py-0 ft_text h4 text-dark fw-bold">Private Helicopter</a>
+                                    <p class="card-text text-secondary">Charter a A500</p>
+                                    <ul class="nav justify-content-between pb-2" style="border-bottom: 1px dashed gray;">
+                                      <li class="">8-14 Seats</li>
+                                      <li class="">Price: $9,000/hr</li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-body pb-3 py-0 ">
+                                    <a href="" class=" nav-link px-0 py-0 ft_text_plane " style="width: fit-content;">
+                                      <i class="fa-solid fa-plane ft_plane"></i>
+                                      <span class="ti">Book Now</span>
+                                     </a>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="card" style="border-radius: 13px !important;">
+                                  <img src="assets/img/charter-4.png" class="img-fluid" alt="..." style="border-top-left-radius: 13px;border-top-right-radius: 13px;">
+                                  <div class="card-body">
+                                    <a href="" class="nav-link px-0 py-0 ft_text h4 text-dark fw-bold">Air Ambulance</a>
+                                    <p class="card-text text-secondary">Beech BE300 Super King</p>
+                                    <ul class="nav justify-content-between pb-2" style="border-bottom: 1px dashed gray;">
+                                      <li class="">8-14 Seats</li>
+                                      <li class="">Price: $9,000/hr</li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-body pb-3 py-0 ">
+                                    <a href="" class=" nav-link px-0 py-0 ft_text_plane " style="width: fit-content;">
+                                      <i class="fa-solid fa-plane ft_plane"></i>
+                                      <span class="ti">Book Now</span>
+                                     </a>
+                                  </div>
+                                  </div>
+                                </div>
+        
+                              </div>
+                              
+                              <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+                            <!-- Initialize Swiper -->
+                            <script>
+                              var swiper = new Swiper(".mySwiper", {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                                pagination: {
+                                  el: ".swiper-pagination",
+                                  clickable: true,
+                                },
+                                navigation: {
+                                  nextEl: ".swiper-next",
+                                  prevEl: ".swiper-prev",
+                                },
+                                loop: true,
+                                breakpoints: {
+                                  640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                  },
+                                  768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 40,
+                                  },
+                                  1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 50,
+                                  },
+                                  1440: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 50,
+                                  }
+                                },
+                              });
+                            </script>
+                              
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                 <!-- section 5 end  -->
+                  <!-- section 6 -->
+                  <section>
+                    <div class="container-fluid py-5 " style="    background-color: #FCFCFC;">
+                      <div class="container py-5 ">
+                        <div class="swiper mySwiper_img">
+                          <div class="swiper-wrapper  ">
+                            <div class="swiper-slide slider_img_hover"><img src="assets/img/brand-1.svg" class="img-fluid img_hover" alt=""></div>
+                            <div class="swiper-slide slider_img_hover"><img src="assets/img/brand-2.svg" class="img-fluid img_hover" alt=""></div>
+                            <div class="swiper-slide slider_img_hover"><img src="assets/img/brand-3.svg" class="img-fluid img_hover" alt=""></div>
+                            <div class="swiper-slide slider_img_hover"><img src="assets/img/brand-4.svg" class="img-fluid img_hover" alt=""></div>
+                            <div class="swiper-slide slider_img_hover"><img src="assets/img/brand-5.svg" class="img-fluid img_hover" alt=""></div>
+                            <div class="swiper-slide slider_img_hover"><img src="assets/img/brand-1.svg" class="img-fluid img_hover" alt=""></div>
+                            <div class="swiper-slide slider_img_hover"><img src="assets/img/brand-2.svg" class="img-fluid img_hover" alt=""></div>
+                            <div class="swiper-slide slider_img_hover"><img src="assets/img/brand-3.svg" class="img-fluid img_hover" alt=""></div>
+                            <div class="swiper-slide slider_img_hover"><img src="assets/img/brand-4.svg" class="img-fluid img_hover" alt=""></div>
+                            <div class="swiper-slide slider_img_hover"><img src="assets/img/brand-5.svg" class="img-fluid img_hover" alt=""></div>
+                          </div>
+                        </div>
+        
+                      </div>
+                    </div>
+                    <script>
+                      var swiper = new Swiper(".mySwiper_img", {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                        pagination: {
+                          el: ".swiper-pagination",
+                          clickable: true,
+                        },
+                        breakpoints: {
+                          640: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                          },
+                          768: {
+                            slidesPerView: 4,
+                            spaceBetween: 40,
+                          },
+                          1024: {
+                            slidesPerView: 5,
+                            spaceBetween: 50,
+                          },
+                        },
+                      });
+                    </script>
+                  </section>  
+                   <!-- section 6 end  -->
+    </main>
+    <footer>
+        <section>
+          <div class="container-fluid py-5 ft_bg ">
+            <div class="container pt-5 ">
+              <div class="row  justify-content-between">
+                <div class="col-lg-4  col-md-7 my-2 ">
+                  <img src="assets/img/logo.png" class="img-fluid mb-2" alt="">
+                  <p class="text-white lh-lg">Flynext was founded in 1991 by a group of safety-focused professionals who created The Wingman Standard for rigorously vetting air charter operators.</p>
+                </div>
+                <div class="col-lg-3 col-md-5 align-content-center my-2">
+                  <ul class="navbar-nav ">
+                    <li><h5 class="fw-bold pb-2" style="color: #DCBB87 ;">EUROPE</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Europe 45 Gloucester Road</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">London DT1M 3BF</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">+44 (0)20 3671 5709</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2  col-md-7   align-content-center my-2">
+                  <ul class="navbar-nav ">
+                    <li><h5 class="fw-bold pb-2" style="color: #DCBB87 ;">ASIA & PACIFIC</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">2473 Red Road Ste 98</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Singapore SG</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">+ 1 623 211 6319</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2  col-md-5   align-content-center my-2">
+                  <ul class="navbar-nav ">
+                    <li><h5 class="fw-bold pb-2" style="color: #DCBB87 ;">NORTH AMERICA</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">2473 Red Road Ste 98</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Singapore SG</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">+ 1 623 211 6319</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row py-5  justify-content-center " style="border-radius: 15px; border: 1px solid #DCBB87; background-color: #19232d;">
+                <div class="col-lg-3 my-3 col-md-6">
+                  <ul class="navbar-nav">
+                    <li><h5 class="text-white fw-bold mb-3  pb-2 ft_under">Get Started</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Private jet</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Register</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Current Jet Deals</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Flynext mobile app</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 my-3 col-md-6">
+                  <ul class="navbar-nav">
+                    <li><h5 class="text-white fw-bold mb-3  pb-2 ft_under">How it works</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">How it works</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Ways to fly</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Ways to buy</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Private charter</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Private Jet Cost</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 my-3 col-md-6">
+                  <ul class="navbar-nav">
+                    <li><h5 class="text-white fw-bold mb-3  pb-2 ft_under">About us</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">About us</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">News & press</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Blog</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">FAQs</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Careers</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 my-3 col-md-6">
+                  <ul class="navbar-nav">
+                    <li><h5 class="text-white fw-bold mb-3  pb-2 ft_under">About us</h5></li>
+                    <li><p class="text-white">Flynext was founded in 1991 by a group of safety-focused professionals erators.</p></li>
+                    <li>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text border-0 bg-white px-3" id="basic-addon1"><i class="fa-regular fa-envelope" style="color: #DCBB87; cursor: pointer;"></i></span>
+                        <input type="text" class="form-control border-0 px-0 py-3" placeholder="Enter-Email" aria-label="Username" aria-describedby="basic-addon1" style="cursor: text;">
+                      </div>
+                    </li>
+                    <li class="nav-item nav_btn rounded-1 py-1 pe-4 pe-lg-0">
+                      <a class="nav-link  px-4 px-lg-3 py-2  rounded-1 fw-bold text-dark" href="#">
+                        <i class="fa-solid fa-plane"></i>
+                        <span class="d-lg-none d-xxl-inline-block">Subscribe Us</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row pt-5">
+                <div class="col-lg-6 col-md-6">
+                  <ul class="nav gap-3">
+                    <li class="nav-item "><a href="" class="nav-link px-2 py-2    text-center rounded-circle py-2  social-2 "><i class="fa-brands fa-facebook px-1 "></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link px-2 py-2    text-center rounded-circle py-2 social-2"><i class="fa-brands fa-twitter px-1"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link  px-2 py-2 text-center rounded-circle py-2 social-2"><i class="fa-brands fa-youtube px-1"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link  px-2 py-2   text-center rounded-circle py-2 social-2"><i class="fa-brands fa-instagram px-1"></i></a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 text-lg-end my-3 align-content-center text-md-start">
+                  <p class="text-white  m-0">© 2022 Fly Next Airlines. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    
+    <script>
+        var loader = document.getElementById("preloader");
+        setTimeout(function() {
+            loader.style.display = "none";
+        }, 3000);
+        window.addEventListener("load", function() {
+        });
+
+    </script>
+</body>

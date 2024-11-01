@@ -1,0 +1,31 @@
+.card_hover:hover{
+    box-shadow: inset 0px 0px 32px 7px #Dcbb87;
+    transition: all 0.3s ease-in-out;
+}
+.card_hover:hover .fa-globe{
+    color: #Dcbb87;
+    transition: all 0.3s ease-in-out;
+}
+.card_hover:hover .fa-circle-dollar-to-slot{
+    color: #Dcbb87;
+    transition: all 0.3s ease-in-out;
+}
+.card_hover:hover .fa-user-tie{
+    color: #Dcbb87;
+    transition: all 0.3s ease-in-out;
+}
+.card_hover:hover .fa-calendar-days{
+    color: #Dcbb87;
+    transition: all 0.3s ease-in-out;
+}
+.card_hover:hover .fa-bullhorn{
+    color: #Dcbb87;
+    transition: all 0.3s ease-in-out;
+}
+.card_hover:hover .fa-phoenix-framework{
+    color: #Dcbb87;
+    transition: all 0.3s ease-in-out;
+}
+.card{
+    cursor: pointer;
+}

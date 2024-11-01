@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLYNEXT</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/plane-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/play.css">
+    <link rel="stylesheet" href="assets/css/cardhover.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+
+    <!-- swiper link  -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+    <!-- play button  -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+
+
+    <!-- aos animation -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<div id="preloader"></div>
+<body>
+    <header class="sticky-top">
+        <div class="container-fluid bg_header  px-xl-5 px-lg-0 ">
+            <div class="px-lg-5 px-md-0 d-block  ">
+                <nav class="navbar  navbar-expand-lg navbar-light">
+                    <div class="container-fluid  py-1">
+                      
+                        <a class="navbar-brand px-0" href="#">
+                          <img src="assets/img/logo.png" class="img-fluid" alt="">
+                        </a>
+                        <button class="navbar-toggler border-0 float-end mt-2 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                          <span class=""><i class="fa-solid h3 text-white mt-2 fa-bars"></i></span>
+                        </button>
+                   
+                      <div class="collapse navbar-collapse  px-0 justify-content-end  w-100" id="navbarSupportedContent">
+                        <ul class="navbar-nav gap-2">
+                          <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li> -->
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link nav_under px-0  fw-bold fs-6 text-white" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 text-white"  href="about.html">About Us</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4 ">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="services.html">Services</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 " style="color: #dcbb87;" href="blog.html">Blog</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="faq.html">Faq</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4">
+                            <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="contact.html">Contact Us</a>
+                          </li>
+                          <li class="nav-item py-1 pe-4 position-relative">
+                            <a class="nav-link px-0  fw-bold fs-6 text-white " href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <!-- <form action="" class="position-absolute form">
+                             <div class="input-group border  ">
+                              <input type="text">
+                              <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                             </div>
+                            </form> -->
+                          </li>
+                          <li class="nav-item nav_btn rounded-1 py-1 pe-4 pe-lg-0">
+                            <a class="nav-link  px-4 px-lg-3 py-2  rounded-1 fw-bold text-dark" href="#">
+                              <i class="fa-solid fa-plane"></i>
+                              <span class="d-lg-none d-xxl-inline-block">Book Now</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start bg-black" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header">
+              <a class="navbar-brand px-0" href="#">
+                <img src="assets/img/logo.png" class="img-fluid" alt="">
+              </a>
+              <button type="button" class="btn text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid h2 mt-3 text-white fa-xmark"></i></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li> -->
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link nav_under px-0  fw-bold fs-6 text-white"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white"  href="about.html">About Us</a>
+                </li>
+                <li class="nav-item py-1 pe-4 ">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="services.html">Services</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 " style="color: #DCBB87;" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="faq.html">Faq</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0 nav_under fw-bold fs-6 text-white" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item py-1 pe-4">
+                  <a class="nav-link px-0  fw-bold fs-6 text-white " href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li class="nav-item nav_btn rounded-pill  py-1 pe-4 pe-lg-0">
+                  <a class="nav-link  px-4 px-lg-3 py-2 rounded-pill fw-bold text-dark" href="#">
+                    <i class="fa-solid fa-plane"></i>
+                    <span class="d-lg-none d-xxl-inline-block">Book Now</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+    </header>
+    <main>
+        <!-- section 1 -->
+        <section>
+            <div class="container-fluid s4_bg py-5 ">
+             <div class="container position-relative" style="z-index: 2;">
+              <div class="row py-5 justify-content-center">
+                <div class="col-lg-12 py-5 text-center ">
+                    <h1 class="text-white display-3 fw-bold">Blog</h1>
+                     <p class="nav text-white h5 justify-content-center fw-bold  align-items-center gap-3">
+                        <a href="index.html" class="nav-link px-0 py-0 text-white">Home</a><i class="fa-solid fa-greater-than"></i> <span style="color: #dcbb87;">Blog</span>
+                     </p>
+                </div>
+              </div>
+             </div>
+            </div>
+          </section>
+         <!-- section 1 end  -->
+          <!-- section 2  -->
+          <section>
+            <div class="container-fluid  py-5">
+                <div class="container py-5 ">
+                    <div class="row py-5  justify-content-evenly">
+                        <div class="col-lg-8 py-5 ">
+                            <div class="row gap-5 justify-content-center">
+                                <div class="card col-lg-4 px-4 py-4 border-0" style="width: 22rem; border-radius: 14px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);" >
+                                    <img src="assets/img/blog-1.png" class="img-fluid" style="border-radius: 13px;" alt="...">
+                                    <div class="card-body ps-1">
+                                      <div class="d-flex py-3 justify-content-between ">
+                                        <p class="text-secondary m-0">22 March 2022 </p>
+                                        <p class="text-secondary m-0">3 Comment</p>
+                                      </div>
+                                      <a href="" class="nav-link ps-0 py-0 h5  text-dark lh-base ft_text">Charter flight of the Death Penalty in
+                                        America</a>
+                                      <p class="card-text text-secondary  lh-lg">With a vast array of popular private planes to choose from, travelling by private jet charter is the most efficient</p>
+                                      <a href="" class=" px-0 ps-0  nav-link  py-0 fw-bold mt_hover" style="color: #DCBB87;">
+                                        Request More
+                                        <i class="fa-solid fa-arrow-right py-1 ps-2" style="color: #DCBB87;"></i>
+                                      </a>
+                                    </div>
+                                </div>
+                                <div class="card col-lg-4 px-4 py-4 border-0" style="width: 22rem; border-radius: 14px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);" >
+                                    <img src="assets/img/blog-2.png" class="img-fluid" style="border-radius: 13px;" alt="...">
+                                    <div class="card-body ps-1">
+                                      <div class="d-flex py-3 justify-content-between ">
+                                        <p class="text-secondary m-0">20 March 2022 </p>
+                                        <p class="text-secondary m-0">1 Comment</p>
+                                      </div>
+                                      <a href="" class="nav-link ps-0 py-0 h5  text-dark lh-base ft_text">Our technology consistently delivers</a>
+                                      <p class="card-text text-secondary  lh-lg">Private jet hire for leisure purposes allows yourself, your family and friends to travel in luxury, comfort and privacy.</p>
+                                      <a href="" class=" px-0 ps-0  nav-link  py-0 fw-bold mt_hover" style="color: #DCBB87;">
+                                        Request More
+                                        <i class="fa-solid fa-arrow-right py-1 ps-2" style="color: #DCBB87;"></i>
+                                      </a>
+                                    </div>
+                                </div>
+                                <div class="card col-lg-4 px-4 py-4 border-0" style="width: 22rem; border-radius: 14px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);" >
+                                    <img src="assets/img/blog-3.png" class="img-fluid" style="border-radius: 13px;" alt="...">
+                                    <div class="card-body ps-1">
+                                      <div class="d-flex py-3 justify-content-between ">
+                                        <p class="text-secondary m-0">18 June 2022</p>
+                                        <p class="text-secondary m-0">6 Comment</p>
+                                      </div>
+                                      <a href="" class="nav-link ps-0 py-0 h5  text-dark lh-base ft_text">Search the world with ease and
+                                        transparency</a>
+                                      <p class="card-text text-secondary   lh-lg">It’s fast gaining in popularity as leisure time becomes increasingly precious and we value experience of the journey</p>
+                                      <a href="" class=" px-0 ps-0  nav-link  py-0 fw-bold mt_hover" style="color: #DCBB87;">
+                                        Request More
+                                        <i class="fa-solid fa-arrow-right py-1 ps-2" style="color: #DCBB87;"></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                <div class="card col-lg-4 px-4 py-4 border-0" style="width: 22rem; border-radius: 14px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);" >
+                                    <img src="assets/img/blog-1.png" class="img-fluid" style="border-radius: 13px;" alt="...">
+                                    <div class="card-body ps-1">
+                                      <div class="d-flex py-3 justify-content-between ">
+                                        <p class="text-secondary m-0">20 March 2022 </p>
+                                        <p class="text-secondary m-0">1 Comment</p>
+                                      </div>
+                                      <a href="" class="nav-link ps-0 py-0 h5  text-dark lh-base ft_text">Charter an entire jet, or offer the seats</a>
+                                      <p class="card-text text-secondary  lh-lg">Whether it’s a short trip for a weekend skiing or a two-week holiday in the Caribbean, we’ll help you choose</p>
+                                      <a href="" class=" px-0 ps-0  nav-link  py-0 fw-bold mt_hover" style="color: #DCBB87;">
+                                        Request More
+                                        <i class="fa-solid fa-arrow-right py-1 ps-2" style="color: #DCBB87;"></i>
+                                      </a>
+                                    </div>
+                                </div>
+                                <div class="card col-lg-4 px-4 py-4 border-0" style="width: 22rem; border-radius: 14px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);" >
+                                    <img src="assets/img/blog-2.png" class="img-fluid" style="border-radius: 13px;" alt="...">
+                                    <div class="card-body ps-1">
+                                      <div class="d-flex py-3 justify-content-between ">
+                                        <p class="text-secondary m-0">10 March 2022 </p>
+                                        <p class="text-secondary m-0">4 Comment</p>
+                                      </div>
+                                      <a href="" class="nav-link ps-0 py-0 h5  text-dark lh-base ft_text">XO is not simply a private jet service.</a>
+                                      <p class="card-text text-secondary  lh-lg">Your loved ones to your destination in comfort and with minimal fuss. Access to private terminals also helps you</p>
+                                      <a href="" class=" px-0 ps-0  nav-link  py-0 fw-bold mt_hover" style="color: #DCBB87;">
+                                        Request More
+                                        <i class="fa-solid fa-arrow-right py-1 ps-2" style="color: #DCBB87;"></i>
+                                      </a>
+                                    </div>
+                                </div>
+                                <div class="card col-lg-4 px-4 py-4 border-0" style="width: 22rem; border-radius: 14px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);" >
+                                    <img src="assets/img/blog-3.png" class="img-fluid" style="border-radius: 13px;" alt="...">
+                                    <div class="card-body ps-1">
+                                      <div class="d-flex py-3 justify-content-between ">
+                                        <p class="text-secondary m-0">16 March 2022 </p>
+                                        <p class="text-secondary m-0">2 Comment</p>
+                                      </div>
+                                      <a href="" class="nav-link ps-0 py-0 h5  text-dark lh-base ft_text">As well as getting to fly to many different</a>
+                                      <p class="card-text text-secondary  lh-lg">Bstle of busy airports and queues through security, well-rested and ready to make the most of your next adventure.</p>
+                                      <a href="" class=" px-0 ps-0  nav-link  py-0 fw-bold mt_hover" style="color: #DCBB87;">
+                                        Request More
+                                        <i class="fa-solid fa-arrow-right py-1 ps-2" style="color: #DCBB87;"></i>
+                                      </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  py-5 ">
+                            <div class="row gap-5 justify-content-center">
+                                <div class="card col-lg-4 px-4 py-4 border-0" style="width: 22rem; border-radius: 14px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);" >
+                                    <ul class="navbar-nav">
+                                        <li class="fw-bold mb-3 pb-1  " style="border-bottom: 2px solid #DCBB87; width: fit-content;">Recent Posts</li>
+                                        <li class="">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control border border-end-0 py-2" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                                                <span class="input-group-text bg-transparent border" id="basic-addon1">
+                                                    <i class="fa-solid fa-magnifying-glass" style="color: #DCBB87;"></i>
+                                                </span>
+                                              </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card col-lg-4 px-4 py-4 border-0" style="width: 22rem; border-radius: 14px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);" >
+                                    <ul class="navbar-nav">
+                                        <li class="fw-bold mb-3 pb-1  " style="border-bottom: 2px solid #DCBB87; width: fit-content;">Search</li>
+                                        <li class="d-flex align-content-center  py-4" style="border-bottom: 1px dashed gray;">
+                                            <div class="">
+                                                <img src="assets/img/small-blog-1.png" class="" alt="">
+                                            </div>
+                                            <div class=" align-content-center ">
+                                                    <p class="m-0 mb-2 ps-3 text-secondary">Aug 23,2021</p>
+                                                    <h6 class="ft_text mt-2 ps-3 m-0 fw-bold">
+                                                        Our technology consistently delivers</h6>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-content-center  py-4" style="border-bottom: 1px dashed gray;">
+                                            <div class="">
+                                                <img src="assets/img/small-blog-2.png" class="" alt="">
+                                            </div>
+                                            <div class=" align-content-center ">
+                                                    <p class="m-0 mb-2 ps-3 text-secondary">Aug 23,2021</p>
+                                                    <h6 class="ft_text mt-2 ps-3 m-0 fw-bold">Search the world with ease and transparency</h6>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-content-center  py-4" style="border-bottom: 1px dashed gray;">
+                                            <div class="">
+                                                <img src="assets/img/small-blog-3.png" class="" alt="">
+                                            </div>
+                                            <div class=" align-content-center ">
+                                                    <p class="m-0 mb-2 ps-3 text-secondary">Aug 23,2021</p>
+                                                    <h6 class="ft_text mt-2 ps-3 m-0 fw-bold">Charter an entire jet, or offer the seats</h6>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-content-center  py-4" style="border-bottom: 1px dashed gray;">
+                                            <div class="">
+                                                <img src="assets/img/small-blog-4.png" class="" alt="">
+                                            </div>
+                                            <div class=" align-content-center ">
+                                                    <p class="m-0 mb-2 ps-3 text-secondary">Aug 23,2021</p>
+                                                    <h6 class="ft_text mt-2 ps-3 m-0 fw-bold">Charter flight of the Death Penalty in America</h6>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card col-lg-4 px-4 py-4 border-0" style="width: 22rem; border-radius: 14px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);" >
+                                    <ul class="navbar-nav">
+                                        <li class="fw-bold mb-3 pb-1  " style="border-bottom: 2px solid #DCBB87; width: fit-content;">Recent Posts</li>
+                                        <li class=" align-content-center  py-3" style="border-bottom: 1px dashed gray;">
+                                         <a href="" class="ft_text nav-link ps-3 py-0 gt d-flex justify-content-between text-dark">
+                                            <p class="m-0">Business Analysis</p>
+                                            <p class="m-0">(4)</p>
+                                         </a>
+                                        </li>
+                                        <li class=" align-content-center  py-3" style="border-bottom: 1px dashed gray;">
+                                            <a href="" class="ft_text nav-link ps-3 py-0 gt d-flex justify-content-between text-dark">
+                                               <p class="m-0">Business Strategy</p>
+                                               <p class="m-0">(5)</p>
+                                            </a>
+                                           </li>
+                                           <li class=" align-content-center  py-3" style="border-bottom: 1px dashed gray;">
+                                            <a href="" class="ft_text nav-link ps-3 py-0 gt d-flex justify-content-between text-dark">
+                                               <p class="m-0">Stock Investment</p>
+                                               <p class="m-0">(1)</p>
+                                            </a>
+                                           </li>
+                                           <li class=" align-content-center  py-3" style="border-bottom: 1px dashed gray;">
+                                            <a href="" class="ft_text nav-link ps-3 py-0 gt d-flex justify-content-between text-dark">
+                                               <p class="m-0">Business Analysis</p>
+                                               <p class="m-0">(4)</p>
+                                            </a>
+                                           </li>
+                                           <li class=" align-content-center  py-3" style="border-bottom: 1px dashed gray;">
+                                            <a href="" class="ft_text nav-link ps-3 py-0 gt d-flex justify-content-between text-dark">
+                                               <p class="m-0">Business Analysis</p>
+                                               <p class="m-0">(4)</p>
+                                            </a>
+                                           </li>
+                                           <li class=" align-content-center  py-3" style="border-bottom: 1px dashed gray;">
+                                            <a href="" class="ft_text nav-link ps-3 py-0 gt d-flex justify-content-between text-dark">
+                                               <p class="m-0">Business Analysis</p>
+                                               <p class="m-0">(4)</p>
+                                            </a>
+                                           </li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="card col-lg-4 px-4 py-4 border-0" style="width: 22rem; border-radius: 14px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);" >
+                                    <ul class="navbar-nav">
+                                        <li class="fw-bold mb-3 pb-1  " style="border-bottom: 2px solid #DCBB87; width: fit-content;">Tags</li>
+                                        <li class="input-group gap-2">
+                                           <a href="" class="nav-link px-3 text-dark btn_hover border" style="width: fit-content;">Airport</a>
+                                           <a href="" class="nav-link px-3 text-dark btn_hover border" style="width: fit-content;">Private Jet</a>
+                                           <a href="" class="nav-link px-3 text-dark btn_hover border" style="width: fit-content;">Helicopter</a>
+                                           <a href="" class="nav-link px-3 text-dark btn_hover border" style="width: fit-content;">Gallery</a>
+                                           <a href="" class="nav-link px-3 text-dark btn_hover border" style="width: fit-content;">Corporate</a>
+                                           <a href="" class="nav-link px-3 text-dark btn_hover border" style="width: fit-content;">Business</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section> 
+           <!-- section 2 end  -->
+    </main>
+    <footer>
+        <section>
+          <div class="container-fluid py-5 ft_bg ">
+            <div class="container pt-5 ">
+              <div class="row  justify-content-between">
+                <div class="col-lg-4  col-md-7 my-2 ">
+                  <img src="assets/img/logo.png" class="img-fluid mb-2" alt="">
+                  <p class="text-white lh-lg">Flynext was founded in 1991 by a group of safety-focused professionals who created The Wingman Standard for rigorously vetting air charter operators.</p>
+                </div>
+                <div class="col-lg-3 col-md-5 align-content-center my-2">
+                  <ul class="navbar-nav ">
+                    <li><h5 class="fw-bold pb-2" style="color: #DCBB87 ;">EUROPE</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Europe 45 Gloucester Road</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">London DT1M 3BF</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">+44 (0)20 3671 5709</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2  col-md-7   align-content-center my-2">
+                  <ul class="navbar-nav ">
+                    <li><h5 class="fw-bold pb-2" style="color: #DCBB87 ;">ASIA & PACIFIC</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">2473 Red Road Ste 98</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Singapore SG</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">+ 1 623 211 6319</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2  col-md-5   align-content-center my-2">
+                  <ul class="navbar-nav ">
+                    <li><h5 class="fw-bold pb-2" style="color: #DCBB87 ;">NORTH AMERICA</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">2473 Red Road Ste 98</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Singapore SG</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">+ 1 623 211 6319</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row py-5  justify-content-center " style="border-radius: 15px; border: 1px solid #DCBB87; background-color: #19232d;">
+                <div class="col-lg-3 my-3 col-md-6">
+                  <ul class="navbar-nav">
+                    <li><h5 class="text-white fw-bold mb-3  pb-2 ft_under">Get Started</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Private jet</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Register</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Current Jet Deals</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Flynext mobile app</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 my-3 col-md-6">
+                  <ul class="navbar-nav">
+                    <li><h5 class="text-white fw-bold mb-3  pb-2 ft_under">How it works</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">How it works</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Ways to fly</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Ways to buy</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Private charter</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Private Jet Cost</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 my-3 col-md-6">
+                  <ul class="navbar-nav">
+                    <li><h5 class="text-white fw-bold mb-3  pb-2 ft_under">About us</h5></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">About us</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">News & press</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Blog</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">FAQs</a></li>
+                    <li><a href="" class="nav-link px-0 py-1 text-white ft_anchor">Careers</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 my-3 col-md-6">
+                  <ul class="navbar-nav">
+                    <li><h5 class="text-white fw-bold mb-3  pb-2 ft_under">About us</h5></li>
+                    <li><p class="text-white">Flynext was founded in 1991 by a group of safety-focused professionals erators.</p></li>
+                    <li>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text border-0 bg-white px-3" id="basic-addon1"><i class="fa-regular fa-envelope" style="color: #DCBB87; cursor: pointer;"></i></span>
+                        <input type="text" class="form-control border-0 px-0 py-3" placeholder="Enter-Email" aria-label="Username" aria-describedby="basic-addon1" style="cursor: text;">
+                      </div>
+                    </li>
+                    <li class="nav-item nav_btn rounded-1 py-1 pe-4 pe-lg-0">
+                      <a class="nav-link  px-4 px-lg-3 py-2  rounded-1 fw-bold text-dark" href="#">
+                        <i class="fa-solid fa-plane"></i>
+                        <span class="d-lg-none d-xxl-inline-block">Subscribe Us</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row pt-5">
+                <div class="col-lg-6 col-md-6">
+                  <ul class="nav gap-3">
+                    <li class="nav-item "><a href="" class="nav-link px-2 py-2    text-center rounded-circle py-2  social-2 "><i class="fa-brands fa-facebook px-1 "></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link px-2 py-2    text-center rounded-circle py-2 social-2"><i class="fa-brands fa-twitter px-1"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link  px-2 py-2 text-center rounded-circle py-2 social-2"><i class="fa-brands fa-youtube px-1"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link  px-2 py-2   text-center rounded-circle py-2 social-2"><i class="fa-brands fa-instagram px-1"></i></a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 text-lg-end my-3 align-content-center text-md-start">
+                  <p class="text-white  m-0">© 2022 Fly Next Airlines. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    
+    <script>
+        var loader = document.getElementById("preloader");
+        setTimeout(function() {
+            loader.style.display = "none";
+        }, 3000);
+        window.addEventListener("load", function() {
+        });
+
+    </script>
+</body>

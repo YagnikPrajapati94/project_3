@@ -1,0 +1,10 @@
+@media only screen and (max-width:992px){
+    .c1,.c2,.c3,.c4{
+        border: none !important;
+    }
+}
+/* @media only screen and (max-width:768px){
+    .swiper-next,.swiper-prev{
+        display: none !important;
+    }
+} */
